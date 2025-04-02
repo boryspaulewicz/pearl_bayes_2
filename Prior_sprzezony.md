@@ -241,7 +241,7 @@ obserwacja, to $(\alpha', \beta') = (\alpha + y, \beta + (1 - y))$ to nasz poste
 zaobserwowaniu $y$, który staje się priorem dla następnej obserwacji, i tak dalej. W ten sposób
 możemy uczyć się z danych na podstawie modelu używając wnioskowania bayesowskiego i jedyne, co
 musimy policzyć, to nowe wartości pary $(\alpha, \beta)$ na podstawie prioru, który ma taką samą
-postać, i danych. Widzimy na tym przykładzie, że priory sprzężone są bardzo wygodne.
+postać, i danych. Widzimy na tym przykładzie, że priory sprzężone są bardzo wygodne w użyciu.
 
 Gdy nie mamy żadnej formuły opisującej rozkład aposteriori, którą moglibyśmy po prostu zastosować i
 obliczyć na podstawie modelu (który we wnioskowaniu bayesowskim składa się zawsze z funkcji

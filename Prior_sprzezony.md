@@ -4,10 +4,10 @@ pochodzące z rzeczywistych badań są często zapisane w postaci tabelki, czyli
 wielowymiarowych punktów, gdzie każda kolumna tabelki to (zależnie od punktu widzenia) zmienna albo
 wymiar. W takim właśnie kontekście interesują nas hipotezy $H\_i$, a dokładniej interesuje nas
 wielkość $p(Hᵢ|D)$ dla każdego $i$. Na przykład, mogą nas interesować tylko dwie hipotezy, a więc $i
-∈ {1, 2}$, gdzie $H₁$ = średnia wynosi $0$, $H₂$ = średnia jest różna od $0$, a nasza tabelka może
-mieć tylko jedną kolumnę / zmienną / wymiar - poprawność reakcji w kolejnych próbach (jedna osoba
-badana). Rozważamy więc różne wartości *zmiennej $H$*, a $D$ traktujemy jako *ustalony, być może
-wielowymiarowy punkt* albo *obiekt* (na przykład macierz).
+∈ \{1, 2\}$, gdzie $H\_₁$ = średnia wynosi $0$, $H\_₂$ = średnia jest różna od $0$, a nasza tabelka
+może mieć tylko jedną kolumnę / zmienną / wymiar - poprawność reakcji w kolejnych próbach (jedna
+osoba badana). Rozważamy więc różne wartości *zmiennej $H$*, a $D$ traktujemy jako *ustalony, być
+może wielowymiarowy punkt* albo *obiekt* (na przykład macierz).
 
 Jak wiemy, $p(Hᵢ|D) = p(D|Hᵢ) * p(Hᵢ) / p(D)$. Gdy, tak jak w rozważanym przykładzie, interesuje nas
 tylko *relatywne* prawdopodobieństwo a posteriori jakiejś *pary* hipotez Hᵢ i Hⱼ, to nie musimy się

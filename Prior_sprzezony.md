@@ -97,7 +97,7 @@ $\ = (1-\theta)^3 * \theta^2$
 gdzie $3$ to liczba obserwacji równych $0$, a $2$ to liczba obserwacji równych $1$.
 
 Ogólnie, jeżeli $n$ to liczba prób Bernoulliego, $s$ to liczba "sukcesów" (czyli jedynek), $p = n -
-s$ to liczba "porażek" (czyli zer), to $p(y\_1, ..., y\_n|\theta) = \theta^s * \theta^p, gdzie
+s$ to liczba "porażek" (czyli zer), to $p(y\_1, ..., y\_n|\theta) = \theta^s * \theta^p$, gdzie
 $y\_1, ..., y\_n$ to tylko w pewien sposób (pasujący do rozważanej sytuacji) zapisany zbiór danych,
 który wcześniej oznaczaliśmy ("generycznie") literą $D$.
 
@@ -112,9 +112,9 @@ $p(H\_i|D) = p(D|H\_i) * p(H\_i) / p(D)$
 
 $p(\theta|y) = p(y|\theta) * p(\theta) / p(y)$
 
-... gdzie tym razem $y$ (mała litera) oznacza ustalony zbiór danych, jest dla Ciebie jasny. Użyłem
-tu małej litery $y$, bo to jest chyba najczęściej stosowana konwencja w literaturze (jak mówią
-niektórzy matematycy - w matematyce piszemy jak chcemy, ale piszemy jak piszemy).
+... jest dla Ciebie jasny. Użyłem tu małej litery $y$, bo to jest chyba najczęściej stosowana
+konwencja w literaturze (jak mówią niektórzy matematycy - w matematyce piszemy jak chcemy, ale
+piszemy jak piszemy).
 
 Tak się składa, że w przypadku rozkładu Bernoulliego, tak jak w przypadku każdego innego rozkładu
 należącego do rodziny wykładniczej rozkładów (np. normalnego, Poissona, wykładniczego, gamma,

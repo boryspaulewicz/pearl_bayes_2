@@ -379,7 +379,7 @@ przyjęliśmy (takie priory w tej sytuacji raczej nie przybliżają dobrze niczy
 intuicji), z prawdopodobieństwem 95% prawdziwa wartość nachylenia znajduje się w przedziale [3.1,
 4.8].
 
-Dla porównania, używając wnioskowania częstościowego i dopasowania namniejszych kwadratów
+Dla porównania, używając wnioskowania częstościowego i dopasowania najmniejszych kwadratów
 uzyskaliśmy 95% przedziały *ufności* wokół nachylenia równe (zaokrąglając) [3.1, 4.8], czyli
 praktycznie takie same, ale teoria wnioskowania częstościowego *nie* pozwala nam wyprowadzić
 dedukcyjnie *żadnego* sądu na temat prawdopodobieństw wartości nachylenia, bo z perspektywy

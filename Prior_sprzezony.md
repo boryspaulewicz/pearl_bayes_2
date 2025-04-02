@@ -70,14 +70,17 @@ Y = c(0, 0, 1, 0, 1)
 
 Gdybyśmy założyli, że $\theta = .5$, to prawdopodobieństwo zaobserwowania $Y$ byłoby równe:
 
-$p(0, 0, 1, 0, 1) =
- = p(0) * p(0)  * p(1) * p(0) * p(1) \text{ponieważ to są próby niezależne z tego samego rozkładu}
- = .5 * .5 * .5 * .5 * .5
- = .5^5$
+$p(0, 0, 1, 0, 1) =$
+
+$\ = p(0) * p(0)  * p(1) * p(0) * p(1) \text{ponieważ to są próby niezależne z tego samego rozkładu}$
+
+$\ = .5 * .5 * .5 * .5 * .5$
+
+$\ = .5^5$
 
 A gdybyśmy założyli, że $\theta = .2$, to byłoby równe
 
-$p(0, 0, 1, 0, 1) = \\
+$p(0, 0, 1, 0, 1) =
  = .8 * .8 * .2 * .8 * .2
  = .8^3 * .2^2$
 

@@ -237,7 +237,7 @@ curve(dbeta(x, 2 + 1, 4 + 0), 0, 1)
 ```
 
 Ogólnie, jeżeli para $(\alpha, \beta)$ to nasz prior Beta a $y$ to jakaś *pojedyncza, kolejna*
-obserwacja, to $(\alpha', \beta')$ = (\alpha + y, \beta + (1 - y))$ to nasz posterior po
+obserwacja, to $(\alpha', \beta') = (\alpha + y, \beta + (1 - y))$ to nasz posterior po
 zaobserwowaniu $y$, który staje się priorem dla następnej obserwacji, i tak dalej. W ten sposób
 możemy uczyć się z danych na podstawie modelu używając wnioskowania bayesowskiego i jedyne, co
 musimy policzyć, to nowe wartości pary $(\alpha, \beta)$ na podstawie prioru, który ma taką samą

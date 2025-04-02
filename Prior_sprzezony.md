@@ -6,45 +6,46 @@ wymiar. W takim właśnie kontekście interesują nas hipotezy $H\_i$, a dokład
 wielkość $p(H\_i|D)$ dla każdego $i$. Na przykład, mogą nas interesować tylko dwie hipotezy, a więc
 $i ∈ \\{1, 2\\}$, gdzie $H\_1$ = średnia wynosi $0$, $H\_2$ = średnia jest różna od $0$, a nasza
 tabelka może mieć tylko jedną kolumnę / zmienną / wymiar - poprawność reakcji w kolejnych próbach
-(jedna osoba badana). Rozważamy więc różne wartości *zmiennej $H$*, a $D$ traktujemy jako *ustalony,
+(jedna osoba badana). Rozważamy więc różne wartości *zmiennej* $H$, a $D$ traktujemy jako *ustalony,
 być może wielowymiarowy punkt* albo *obiekt* (na przykład macierz).
 
-Jak wiemy, $p(Hᵢ|D) = p(D|Hᵢ) * p(Hᵢ) / p(D)$. Gdy, tak jak w rozważanym przykładzie, interesuje nas
-tylko *relatywne* prawdopodobieństwo a posteriori jakiejś *pary* hipotez Hᵢ i Hⱼ, to nie musimy się
-przejmować wielkością p(D), ponieważ takie relatywne prawdopodobieństwo ...
+Jak wiemy, $p(H\_i|D) = p(D|H\_i) * p(H\_i) / p(D)$. Gdy, tak jak w rozważanym przykładzie,
+interesuje nas tylko *relatywne* prawdopodobieństwo a posteriori jakiejś *pary* hipotez $H\_a$ i
+$H\_b$, to nie musimy się przejmować wielkością $p(D)$, ponieważ takie relatywne prawdopodobieństwo
+...
 
-p(Hᵢ|D) / p(Hⱼ|D)
+$p(H\_a|D) / p(H\_b|D)$
 
 ... jest dane przez ...
 
-[p(D|Hᵢ) * p(Hᵢ) / p(D)] / [p(D|Hⱼ) * p(Hⱼ) / p(D)]
+$[p(D|H\_a) * p(H\_a) / p(D)] / [p(D|H\_b) * p(H\_b) / p(D)]$
 
-gdzie p(D) się skraca, a więc:
+gdzie $p(D)$ się skraca, a więc:
 
-p(Hᵢ|D) / p(Hⱼ|D) = [p(D|Hᵢ) / p(D|Hⱼ)] * [p(Hᵢ) / p(Hⱼ)]
+$p(H\_a|D) / p(H\_b|D) = [p(D|H\_a) / p(D|H\_b)] * [p(H\_a) / p(H\_b)]$
 
-p(Hᵢ|D) / p(Hⱼ|D) *iloraz posteriorów*, a wyrażenie po prawej to iloczyn *ilorazu wiarygodności*
-p(D|Hᵢ) / p(D|Hⱼ) i *ilorazu priorów* p(Hᵢ) / p(Hⱼ). Kiedy takie coś nas interesuje, ale również
-w pewnych innych sytuacjach, nie przejmujemy się wielkością p(D) i rozważamy coś takiego (symbol
-∝ czytamy jako "proporcjonalne do"):
+Wyrażenie $p(H\_a|D) / p(H\_b|D)$ to *iloraz posteriorów*, a wyrażenie po prawej to iloczyn *ilorazu
+wiarygodności* $p(D|H\_a) / p(D|H\_b)$ i *ilorazu priorów* $p(H\_a) / p(H\_b)$. Kiedy takie coś nas
+interesuje, ale również w pewnych innych sytuacjach, nie przejmujemy się wielkością $p(D)$ i
+rozważamy coś takiego (symbol $\propto$ czytamy jako "proporcjonalne do"):
 
-p(Hᵢ|D) = p(D|Hᵢ) * p(Hᵢ) / p(D) ∝ p(D|Hᵢ) * p(Hᵢ)
+$p(H\_i|D) = p(D|H\_i) * p(H\_i) / p(D) ∝ p(D|H\_i) * p(H\_i)$
 
-Gdy, tak jak w rozważanym przykładzie, dane są dane, wielkość p(D) pełni tylko rolę stałej, przez
+Gdy, tak jak w rozważanym przykładzie, dane są dane, wielkość $p(D)$ pełni tylko rolę stałej, przez
 którą trzeba podzielić wyrażenie po prawej stronie, żeby uzyskać (warunkowy) rozkład
-prawdopodobieństwa na hipotezach, czyli takiej stałej, że podzielenie przez nią p(D|Hᵢ) * p(Hᵢ)
-sprawia, że Σᵢ p(Hᵢ|D) = 1, czyli że wyrażenie po lewej oznacza rozkład warunkowy, a nie jakąś
-funkcję hipotez, która nie jest poprawnym rozkładem prawdopodobieństwa.
+prawdopodobieństwa na hipotezach, czyli takiej stałej, że podzielenie przez nią $p(D|H\_i) *
+p(H\_i)$ sprawia, że $\sum_ᵢ p(H\_i|D) = 1$, czyli to wyrażenie oznacza rozkład (tutaj warunkowy), a
+nie jakąś funkcję hipotez, która nie jest poprawnym rozkładem prawdopodobieństwa.
 
-W wielu sytuajach musimy jednak obliczyć p(D), na przykład wtedy, gdy chcemy obliczyć przedziały
-wierności, czyli pewne interwały oparte na posteriorze.
+W wielu sytuajach musimy jednak obliczyć albo przynajmniej przybliżyć $p(D)$, na przykład wtedy, gdy
+chcemy obliczyć przedziały wierności, czyli pewne interwały oparte na posteriorze.
 
-Niech badanie polega na pobieraniu 5 próbek binarnych. Wyniki tego badania będziemy zapisywać
-jako Yᵢ, gdzie i = 1, ..., 5. Załóżmy, że dla każdej próby (i), p(Yᵢ = 1) = θ, gdzie θ to
-parametr o nieznanej wartości. Z tego założenia wynika, że to są próby niezależne, bo rozkład Y
-nie zależy wcześniejszych prób (bo θ nie jest funkcją wcześniejszych prób, tylko jakąś *nieznaną
-stałą*). Każdą z takich prób nazywamy *doświadczeniem Bernoulliego* (ang. *Bernoulli
-trial*). Przykładem próby Bernoulliego jest rzut monetą.
+Niech badanie polega na pobieraniu $5$ próbek binarnych. Wyniki tego badania będziemy zapisywać jako
+Yᵢ, gdzie i = 1, ..., 5. Załóżmy, że dla każdej próby (i), p(Yᵢ = 1) = θ, gdzie θ to parametr o
+nieznanej wartości. Z tego założenia wynika, że to są próby niezależne, bo rozkład Y nie zależy
+wcześniejszych prób (bo θ nie jest funkcją wcześniejszych prób, tylko jakąś *nieznaną stałą*). Każdą
+z takich prób nazywamy *doświadczeniem Bernoulliego* (ang. *Bernoulli trial*). Przykładem próby
+Bernoulliego jest rzut monetą.
 
 Posługując się tą notacją możemy przyjąć na przykład, że hipotezy to dokładnie wszystkie możliwe
 wartości θ, czyli hipotezy to Hᵢ, gdzie i ∈ [0, 1], albo po prostu zbiór hipotez to [0, 1], a θ

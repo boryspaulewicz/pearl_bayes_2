@@ -268,7 +268,7 @@ plot(cars)
 
 Możemy skorzystać z takiego oto prostego prawie opisu rozkładu warunkowego:
 
-$\text{dist} = \beta_0 + \beta\_1 * \text{speed}
+$\text{dist} = \beta_0 + \beta\_1 * \text{speed}$
 
 To jeszcze nie jest opis *rozkładu* warunkowego $p(\text{dist}|\text{speed})$, tylko opis *samej
 średniej* tego rozkładu, ale ponieważ nie wiemy (nikt nie wie) jaka formuła opisuje ten rozkład, to

@@ -4,7 +4,7 @@ pochodzące z rzeczywistych badań są często zapisane w postaci tabelki, czyli
 wielowymiarowych punktów, gdzie każda kolumna tabelki to (zależnie od punktu widzenia) zmienna albo
 wymiar. W takim właśnie kontekście interesują nas hipotezy $H\_i$, a dokładniej interesuje nas
 wielkość $p(H\_i|D)$ dla każdego $i$. Na przykład, mogą nas interesować tylko dwie hipotezy, a więc
-$i ∈ \{1, 2\}$, gdzie $H\_1$ = średnia wynosi $0$, $H\_2$ = średnia jest różna od $0$, a nasza
+$i ∈ \\{1, 2\\}$, gdzie $H\_1$ = średnia wynosi $0$, $H\_2$ = średnia jest różna od $0$, a nasza
 tabelka może mieć tylko jedną kolumnę / zmienną / wymiar - poprawność reakcji w kolejnych próbach
 (jedna osoba badana). Rozważamy więc różne wartości *zmiennej $H$*, a $D$ traktujemy jako *ustalony,
 być może wielowymiarowy punkt* albo *obiekt* (na przykład macierz).

@@ -1,3 +1,5 @@
+# Priory sprzężone na przykładzie rozkładów Bernoulliego i Beta
+
 Rozważamy sytuację, w której dane ($D$) są dane, czyli jakieś badanie zostało już wykonane, czyli
 traktujemy dane jako pewną stałą i przynajmniej udajemy, że znamy wartość tej stałej. Dane
 pochodzące z rzeczywistych badań są często zapisane w postaci tabelki, czyli zbiorów
